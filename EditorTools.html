@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Dymatic Documentation - Dymatic Documentation</title>
+        <title>Networking - Dymatic Documentation</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="DymaticDocumentation.html" class="active"><strong aria-hidden="true">1.</strong> Dymatic Documentation</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.</strong> Engine Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.1.</strong> Rendering</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.1.1.</strong> Camera</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.1.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.1.3.</strong> Materials</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.1.4.</strong> Particle Systems</a></li></ol></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.2.</strong> Physics</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.3.</strong> Audio</a></li><li class="chapter-item expanded "><a href="EditorTools.html"><strong aria-hidden="true">2.4.</strong> Networking</a></li></ol></li><li class="chapter-item expanded "><a href="Scripting.html"><strong aria-hidden="true">3.</strong> Scripting API</a></li><li class="chapter-item expanded "><a href="DeveloperAutomations.html"><strong aria-hidden="true">4.</strong> Developer Automations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="PythonBindings.html"><strong aria-hidden="true">4.1.</strong> Python Blindings</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="DymaticDocumentation.html"><strong aria-hidden="true">1.</strong> Dymatic Documentation</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.</strong> Engine Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.1.</strong> Rendering</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.1.1.</strong> Camera</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.1.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.1.3.</strong> Materials</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.1.4.</strong> Particle Systems</a></li></ol></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.2.</strong> Physics</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.3.</strong> Audio</a></li><li class="chapter-item expanded "><a href="EditorTools.html" class="active"><strong aria-hidden="true">2.4.</strong> Networking</a></li></ol></li><li class="chapter-item expanded "><a href="Scripting.html"><strong aria-hidden="true">3.</strong> Scripting API</a></li><li class="chapter-item expanded "><a href="DeveloperAutomations.html"><strong aria-hidden="true">4.</strong> Developer Automations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="PythonBindings.html"><strong aria-hidden="true">4.1.</strong> Python Blindings</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,63 +134,15 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><img src="assets/LogoBanner.png" alt="Dymatic Logo" /></p>
-<h2 id="documentation"><a class="header" href="#documentation">Documentation</a></h2>
-<p>Explore the complete documentation on getting setup with Dymatic as well as infomation around all of the engine's core features and systems.</p>
-<p>Dymatic is a basic, open source, WIP 3D game engine created using C++. Currently, Microsoft Visual Studio is required to build, and only officially supports Windows. Visit the <a href="https://www.dymaticengine.com">Dymatic Engine</a> home page to find out more.</p>
-<h2 id="engine-features"><a class="header" href="#engine-features">Engine Features</a></h2>
-<ul>
-<li>Real-time 2D and 3D renderer with lighting, volumetrics and animation</li>
-<li>Extensive and customizable scene building toolset</li>
-<li>Project management system</li>
-<li>Entity component system</li>
-<li>2D and 3D physics engine</li>
-<li>Audio engine</li>
-<li>Asset manager</li>
-<li>C# script engine</li>
-<li>Built in source control</li>
-<li>Visual scripting system</li>
-<li>Python based editor scripting</li>
-<li>Application deployment system</li>
-</ul>
-<h2 id="building"><a class="header" href="#building">Building</a></h2>
-<h4 id="downloading-the-repository"><a class="header" href="#downloading-the-repository">Downloading the Repository</a></h4>
-<p>Clone this GitHub repository using: <pre><code>git clone --recursive https://github.com/BenC25/Dymatic.git</code></pre>
-If previously cloned non-recursively, clone the necessary submodules using:</p>
-<pre><code>git submodule update --init</code></pre>
-<h4 id="dependencies"><a class="header" href="#dependencies">Dependencies</a></h4>
-<ol>
-<li>
-<p>Run the <a href="https://github.com/BenC25/Dymatic/Public/scripts/Setup.bat"><code>Setup.bat</code></a> file inside the <code>scripts</code> directory which will install any necessary submodules. Currently, python is required for these scripts to execute.</p>
-</li>
-<li>
-<p>If the Vulkan SDK, is not installed, <code>VulaknSDK.exe</code> will be launched via the script and will prompt the user to install the SDK. After installation run <a href="https://github.com/BenC25/Dymatic/Public/scripts/Setup.bat"><code>Setup.bat</code></a> again, and if the previous step was successful, this will lead to the Vulkan SDK debug libraries being downloaded and un-zipped automatically.</p>
-</li>
-<li>
-<p>Submodules are updated automatically.</p>
-</li>
-<li>
-<p>Registration scripts will run, adding shortcuts, file extensions and ensuring that the Dymatic Editor and Runtime both use a 'High Performance' display setting.</p>
-</li>
-<li>
-<p>The <a href="https://github.com/BenC25/Dymatic/Public/scripts/Win-GenProjects.bat"><code>Win-GenProjects.bat</code></a> script file will get executed automatically, and will use <code>premake</code> to generate project files and configure them to the specifications of the included lua file.</p>
-</li>
-<li>
-<p>If any future changes are made to the project setup, use <a href="https://github.com/BenC25/Dymatic/Public/scripts/Win-GenProjects.bat"><code>Win-GenProjects.bat</code></a> to regenerate the project.</p>
-</li>
-</ol>
-<h2 id="available-tools"><a class="header" href="#available-tools"><a href="https://www.dymaticengine.com/tools">Available Tools</a></a></h2>
-<h3 id="dymatic-engine"><a class="header" href="#dymatic-engine">Dymatic Engine</a></h3>
-<p>The Dymatic Editor, Dymatic's powerful visual toolset for managing and creating assets, designing realistic and engaging 3D worlds, scripting interactive experiences and more.</p>
-<h3 id="dymatic-tools-vsix"><a class="header" href="#dymatic-tools-vsix"><a href="https://github.com/BenC25/DymaticTools">Dymatic Tools VSIX</a></a></h3>
-<p>Dymatic's custom Visual Studio extension. Provides a toolset allowing for quick and easy debugging of C# scripts during Dymatic runtime in editor, including breakpoints, callstack, variable inspection and more. Introduces multiple C# templates to reduce time spent on boilerplate code.</p>
-<h2 id="rationale"><a class="header" href="#rationale">Rationale</a></h2>
-<p>Dymatic Engine is a personal project developed by Ben Craighill, serving as as an educational tool, continually evolving as new features are introduced.</p>
+                        <h1 id="editor-tools"><a class="header" href="#editor-tools">Editor Tools</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="DymaticDocumentation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                             <a rel="next" href="EditorTools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
@@ -200,6 +152,9 @@ If previously cloned non-recursively, clone the necessary submodules using:</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="DymaticDocumentation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                     <a rel="next" href="EditorTools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
